@@ -1,0 +1,10 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-top: 15%;
+}
+.dropdown-container{
+    padding: 10px;
+}
