@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter - Temperature</title>
+<head>
+  <link rel="icon" href="../image/calculator_icon.png">
+  <link rel="stylesheet" href="../style/index.css">
+  <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
+
+</head>
+<body>
+    <h1 class="text-center text-white bg-dark p-3 text-uppercase">Conversion Calculator <i class="fa fa-calculator"></i></h1>
+    <h2 class="text-center">Metric System</h2>
+    <p class="about-para">
+        The metric system is an internationally recognised 
+        decimalised system of measurement. It is in widespread use, 
+        and where it is adopted, it is the only or most common system of weights 
+        and measures (see metrication). 
+        It is now known as the International System of Units (SI).
+         It is used to measure everyday things such as the mass of a sack of flour, 
+         the height of a person, the speed of a car, and the volume of fuel in its tank.
+          It is also used in science, industry and trade.
+
+    </p>
+    <p class="about-para">The metric system was designed to have properties 
+      that make it easy to use and widely applicable, including units based 
+      on the natural world, decimal ratios, prefixes for multiples and sub-multiples, 
+      and a structure of base and derived units. It is also a coherent system, which 
+      means that its units do not introduce conversion factors not already present in 
+      equations relating quantities. It has a property called rationalisation that 
+      eliminates certain constants of proportionality 
+      in equations of physics.</p>
+    <p class="about-para">
+      <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
+    </p>
+  <div class="container jumbotron">
+  <div class="container-fluid">
+    
+      <div class="dropdown-container text-center">
+      <div class="dropdown">
+          <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Conversions 
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="html/length.html">Length</a>
+            <a class="dropdown-item" href="../index.html">Weight</a>
+            <a class="dropdown-item" href="html/speed.html">Speed</a>
+          </div>
+        </div>
+        </div>
+      
+        <div class="text-center">
+
+
+
+  
+  <label>Fahrenheit</label><br>
+  <input id="fahrenheit" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Fahrenheit"
+  onchange="fromFahrenheitToOther(this.value)" oninput="fromFahrenheitToOther(this.value)">
+        
+  
+<label>Celsius</label><br>
+<input id= "celsius" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Celsius"
+onchange="fromCelsiusToOthers(this.value)" oninput = "fromCelsiusToOthers(this.value)"><br>
+
+
+
+
+
+
+  <label>kelvin</label><br>
+<input id= "kelvin" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Kelvin"
+onchange="fromKelvinToOther(this.value)" oninput = "fromKelvinToOther(this.value)">
+
+
+
+
+
+</div>
+<script src = "../js/temperature-conversion.js"></script>
+
+</div>
+</div>
+
+<div class="container-fluid">
+  <h1 class="text-center">Brief History of the Metric System</h1>
+  <p class="about-para">
+      Historically, many different systems of units have been used, where a system of units is defined as a collection of units of measurement with rules that relate them to each other. A unit of measurement is a defined magnitude of a quantity that it used as a standard for measurement for the same kind of quantity, such as measurements of length, weight, and volume.
+
+      In the past, many systems of measurement were defined on a local level, and could be based on factors as arbitrary as the length of a king's thumb. While this may work on a local level, when considering trade, as well as science, having systems of units based on units that others may not be able to relate to or understand makes interaction difficult. As such, the development of more universal and consistent systems developed over time. Today, some of the systems of units in use include the metric system, the imperial system, and the United States customary units.
+      
+      The International System of Units (SI) is the standard metric system that is currently used, and consists of seven SI base units of length, mass, time, temperature, electric current, luminous intensity, and amount of substance. Although SI is used almost universally in science (including in the US), some countries such as the United States still use their own system of units. This is partly due to the substantial financial and cultural costs involved in changing a measurement system compared to the potential benefit of using a standardized system. Since US customary units (USC) are so entrenched in the United States, and SI is already used in most applications where standardization is important, everyday use of USC is still prevalent in the United States, and is unlikely to change. As such, many unit converters including this Conversion Calculator exist, and will continue to do so to ensure that people globally are able to communicate different measurements effectively.
+  </p>
+</div>
+
+</body>
+<footer class="bg-dark">
+  <div class="container-fluid text-center">
+      <a href="https:www.facebook.com/shaikhsajid1111" class="fa fa-facebook" target="_blank"></a>
+      <a href="https:www.twitter.com/shaikhsajid1111" class="fa fa-twitter" target="_blank"></a>
+      <a href="https:www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
+      <a href="https:www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
+  </div>
+</footer>
+</html>
