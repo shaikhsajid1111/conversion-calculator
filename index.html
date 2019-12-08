@@ -16,7 +16,7 @@
 
       <div class="dropdown-container text-center">
       <div class="dropdown">
-          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Conversions 
           </a>
         
@@ -50,6 +50,16 @@ onchange="fromOuncesToOther(this.value)" oninput = "fromOuncesToOther(this.value
 <label>Stone</label><br>
 <input id= "stone" type="number" placeholder="Stone"
 onchange="fromStoneToOthers(this.value)" oninput = "fromStoneToOthers(this.value)">
+
+<br>
+<label>Carat</label><br>
+<input id= "carat" type="number" placeholder="Carat"
+onchange="fromCaratToOthers(this.value)" oninput = "fromCaratToOthers(this.value)">
+
+<br>
+<label>Miligrams</label><br>
+<input id= "miligram" type="number" placeholder="Miligrams"
+onchange="fromMiligramToOthers(this.value)" oninput = "fromMiligramToOthers(this.value)">
 
 </div>
 <script src = "js/weight-conversion.js"></script>
