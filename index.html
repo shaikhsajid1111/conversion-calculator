@@ -7,13 +7,14 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
 
 </head>
 <body>
-  <div class="container">
+    <h1 class="text-center">Conversion Calculator <i class="fa fa-calculator"></i></h1>
+  <div class="container jumbotron">
   <div class="container-fluid">
-
+    
       <div class="dropdown-container text-center">
       <div class="dropdown">
           <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -29,37 +30,63 @@
         </div>
       
         <div class="text-center">
-    <label>Pounds</label><br>
-  <input id="pounds" type="number" placeholder="Pounds"
-  onchange="fromPoundsToOther(this.value)" oninput="fromPoundsToOther(this.value)">
-        <br>
+
+
+<div class="row">
+  <div class="col">
+  <label>Pounds</label><br>
+  <input id="pounds" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Pounds"
+  onchange="fromPoundsToOther(this.value)" oninput="fromPoundsToOther(this.value)"></div>
+        <div class="col">
 <label>Gram</label><br>
-<input id= "grams" type="number" placeholder="Grams"
+<input id= "grams" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Grams"
 onchange="fromGramToOthers(this.value)" oninput = "fromGramToOthers(this.value)"><br>
+</div>
+</div>
 
-<label>kilogram</label><br>
-<input id= "kilogram" type="number" placeholder="Kilogram"
+
+<div class="row">
+  <div class="col">
+  <label>kilogram</label><br>
+<input id= "kilogram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Kilogram"
 onchange="fromKilogramToOther(this.value)" oninput = "fromKilogramToOther(this.value)">
-<br>
+</div>
+<div class="col">
 <label>Ounces</label><br>
-<input id= "ounce" type="number" placeholder="Ounce"
+<input id= "ounce" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Ounce"
 onchange="fromOuncesToOther(this.value)" oninput = "fromOuncesToOther(this.value)">
+</div>
+</div>
 
+<div class="row">
 
-<br>
+  <div class="col">
 <label>Stone</label><br>
-<input id= "stone" type="number" placeholder="Stone"
+<input id= "stone" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Stone"
 onchange="fromStoneToOthers(this.value)" oninput = "fromStoneToOthers(this.value)">
-
-<br>
+</div>
+<div class="col">
 <label>Carat</label><br>
-<input id= "carat" type="number" placeholder="Carat"
+<input id= "carat" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Carat"
 onchange="fromCaratToOthers(this.value)" oninput = "fromCaratToOthers(this.value)">
+</div>
+</div>
 
-<br>
+<div class="row">
+  <div class="col">
 <label>Miligrams</label><br>
-<input id= "miligram" type="number" placeholder="Miligrams"
+<input id= "miligram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Miligrams"
 onchange="fromMiligramToOthers(this.value)" oninput = "fromMiligramToOthers(this.value)">
+</div>
+
+<div class="col">
+    <label>Metric ton</label><br>
+    <input id= "metric-ton" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Metric Ton"
+    onchange="fromMetricTonToOthers(this.value)" oninput = "fromMetricTonToOthers(this.value)">
+    </div>
+
+</div>
+
 
 </div>
 <script src = "js/weight-conversion.js"></script>
