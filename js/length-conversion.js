@@ -29,7 +29,7 @@ function fromKilometerToOthers(km){
         meter_element.value = km*1000;
         cm_element.value = km*100000;
         milimeter_element.value = km*1000000;
-        micrometer_element.value = 1000000000;
+        micrometer_element.value = km*1000000000;
         nm_element.value = km*1000000000000;
         mile_element.value = km*0.6213688756;
         yard_element.value = km*1093.6132983;
@@ -87,17 +87,62 @@ function fromNanometerToOthers(nm){
     LY_element.value = nm*1.057008707E-25;
 }
 function fromMilesToOthers(mile){
-
+    meter_element.value = mile*1609.35;
+    km_element.value = mile *1.60935;
+    cm_element.value = mile*160935;
+    milimeter_element.value = mile*1609350;
+    micrometer_element.value = mile*1609350000;
+    nm_element.value = mile * 1609350000000;
+    yard_element.value = mile*1760.0065617;
+    foot_element.value = mile*5280.019685;
+    inch_element.value = mile*63360.23622;
+    LY_element.value = mile*1.701096963E-13;
 }
 function fromYardToOthers(yard){
-
+    meter_element.value = yard*0.9144;
+    km_element.value = yard * 0.0009144;
+    cm_element.value = yard* 91.44;
+    milimeter_element.value = yard*914.4;
+    micrometer_element.value = yard*914400;
+    nm_element.value = yard * 914400000;
+    mile_element.value = yard* 0.0005681797;
+    foot_element.value = yard*3;
+    inch_element.value = yard*36;
+    LY_element.value = yard*9.665287622E-17;
 }
 function fromFootToOthers(foot){
-
+    meter_element.value = foot* 0.3048;
+    km_element.value = foot * 0.0003048;
+    cm_element.value = foot* 30.48;
+    milimeter_element.value = foot*304.8 ;
+    micrometer_element.value = foot*304800;
+    nm_element.value = foot *304800000;
+    mile_element.value = foot*0.0001893932 ;
+    yard_element.value = foot *0.3333333333 ;
+    inch_element.value = foot*12;
+    LY_element.value = foot*3.22176254E-17;
 }
 function fromInchToOthers(inch){
-
+    meter_element.value = inch*0.0254 ;
+    km_element.value = inch * 0.0000254;
+    cm_element.value = inch* 2.54;
+    milimeter_element.value = inch* 25.4;
+    micrometer_element.value = inch* 25400;
+    nm_element.value = inch * 25400000;
+    mile_element.value = inch* 0.0000157828;
+    yard_element.value = inch * 0.0277777778;
+    foot_element.value = inch* 0.0833333333;
+    LY_element.value = inch*2.684802117E-18;
 }
 function fromLYToOthers(ly){
-
+    meter_element.value = ly* 9460660000000000;
+    km_element.value = ly * 9460660000000;
+    cm_element.value = ly* 946066000000000000;
+    milimeter_element.value = ly * 9460660000000000000;
+    micrometer_element.value = ly* 9.46066E+21;
+    nm_element.value = ly * 9.460659999E+24;
+    mile_element.value = ly* 5878559666946;
+    yard_element.value = ly * 10346303587051618;
+    foot_element.value = ly* 31038910761154856;
+    inch_element.value = ly* 372466929133858300;
 }
