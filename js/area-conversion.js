@@ -11,6 +11,7 @@ var square_inch_element = document.getElementById("square-inch");
 var acre_element = document.getElementById("acre");
 
 function fromSquareMeterToOther(num){
+    num = parseFloat(num);
     square_km_element.value = num * 0.000001;
     square_cm_element.value =  num * 10000;
     square_mm_element.value = num * 1000000;
@@ -23,6 +24,7 @@ function fromSquareMeterToOther(num){
     acre_element.value = num * 0.0002471054;
 }
 function fromSquareKilometerToOthers(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 1000000;
     square_cm_element.value =  num * 10000000000;
     square_mm_element.value = num * 1000000000000;
@@ -35,6 +37,7 @@ function fromSquareKilometerToOthers(num){
     acre_element.value = num * 247.10538147;
 }
 function fromSquareCentimeterToOther(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 0.0001;
     square_km_element.value =  num * 1.E-10;
     square_mm_element.value = num * 100;
@@ -47,6 +50,7 @@ function fromSquareCentimeterToOther(num){
     acre_element.value = num * 2.471053814E-8;
 }
 function fromSquareMilimeterToOther(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 0.000001;
     square_km_element.value =  num * 1.E-12;
     square_cm_element.value = num * 0.01;
@@ -59,6 +63,7 @@ function fromSquareMilimeterToOther(num){
     acre_element.value = num * 2.471053814E-10;
 }
 function fromSquareMicrometerToOthers(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 1.E-12;
     square_km_element.value =  num * 1.E-18;
     square_cm_element.value = num * 9.999999999E-9;
@@ -71,6 +76,7 @@ function fromSquareMicrometerToOthers(num){
     acre_element.value = num * 2.471053814E-16;
 }
 function fromHectarToOthers(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 10000;
     square_km_element.value =  num * 0.01;
     square_cm_element.value = num * 100000000;
@@ -83,6 +89,7 @@ function fromHectarToOthers(num){
     acre_element.value = num * 2.4710538147;
 }
 function fromSquareMileToOthers(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 2589990;
     square_km_element.value =  num * 2.58999;
     square_cm_element.value = num * 25899900000;
@@ -95,6 +102,7 @@ function fromSquareMileToOthers(num){
     acre_element.value = num * 640.00046695;
 }
 function fromSquareYardToOthers(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 0.83612736;
     square_km_element.value =  num * 8.3612736E-7;
     square_cm_element.value = num * 8361.2736;
@@ -107,6 +115,7 @@ function fromSquareYardToOthers(num){
     acre_element.value = num * 0.0002066116;
 }
 function fromSquareFootToOthers(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 0.09290304;
     square_km_element.value =  num * 9.290304E-8;
     square_cm_element.value = num * 929.0304;
@@ -119,6 +128,7 @@ function fromSquareFootToOthers(num){
     acre_element.value = num * 0.0000229568;
 }
 function fromSquareInchToOthers(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 0.00064516;
     square_km_element.value =  num * 6.4516E-10;
     square_cm_element.value = num * 6.4516;
@@ -131,6 +141,7 @@ function fromSquareInchToOthers(num){
     acre_element.value = num * 1.594225079E-7;
 }
 function fromAcreToOthers(num){
+    num = parseFloat(num);
     square_meter_element.value = num * 4046.8564224;
     square_km_element.value =  num * 0.0040468564;
     square_cm_element.value = num * 40468564.224;

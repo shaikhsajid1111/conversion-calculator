@@ -1,15 +1,16 @@
 /*Elements*/
-pounds_element = document.getElementById("pounds");
-gram_element = document.getElementById("grams");
-kilogram_element = document.getElementById("kilogram");
-ounce_element = document.getElementById("ounce");
-stone_element = document.getElementById("stone");
-carat_element = document.getElementById("carat");
-miligram_element = document.getElementById("miligram");
-metricTonElement = document.getElementById("metric-ton");
+
+var pounds_element = document.getElementById("pounds");
+var gram_element = document.getElementById("grams");
+var kilogram_element = document.getElementById("kilogram");
+var ounce_element = document.getElementById("ounce");
+var stone_element = document.getElementById("stone");
+var carat_element = document.getElementById("carat");
+var miligram_element = document.getElementById("miligram");
+var metricTonElement = document.getElementById("metric-ton");
 /*from pounds to other conversions*/
 function fromPoundsToOther(pounds){
-
+  pounds = parseFloat(pounds);
   gram_element.value = pounds / 0.0022046;   //pounds to gram
   kilogram_element.value = pounds/2.2046;    //pounds to kilogram
   ounce_element.value = pounds*16;         //to ounces
@@ -22,6 +23,7 @@ function fromPoundsToOther(pounds){
 
 /*from Grams to other conversions*/
 function fromGramToOthers(gram){
+  gram = parseFloat(gram);
   pounds_element.value = gram*0.0022046;  //to pounds
   kilogram_element.value = gram/1000;  //to kg
   ounce_element.value = gram*0.035274;     //to ounce
@@ -34,7 +36,7 @@ function fromGramToOthers(gram){
 
 /*from kg to other conversions*/
 function fromKilogramToOther(kg){
-  
+  kg = parseFloat(kg);
   pounds_element.value = kg*2.2046; //to pounds
   gram_element.value = kg*1000;       //to grams
   ounce_element.value = kg*35.274;    //to ounces
@@ -45,7 +47,7 @@ function fromKilogramToOther(kg){
 }
 /*from Ounces To others*/
 function fromOuncesToOther(oz){
-  
+  oz = parseFloat(oz);
   pounds_element.value = oz*0.0625;     //to pounds
   gram_element.value = oz/0.035274;       //to grams
   kilogram_element.value = oz/35.274;     //to kg
@@ -57,7 +59,7 @@ function fromOuncesToOther(oz){
 
 /*from stone to others*/
 function fromStoneToOthers(st){
-
+  st = parseFloat(st);
   pounds_element.value = st*14;           //to pounds
   gram_element.value = st/0.00015747;       //to grams
   kilogram_element.value = st/0.15747;        //to kg
@@ -69,6 +71,7 @@ function fromStoneToOthers(st){
 
 /*From carat to others */
 function fromCaratToOthers(ct){
+    ct = parseFloat(ct);
     pounds_element.value = ct*0.0004409249;       //to pounds
     gram_element.value = ct*0.2;              //to grams
     kilogram_element.value = ct*0.0002;       //to kg
@@ -80,6 +83,7 @@ function fromCaratToOthers(ct){
 
 /*from miligram to other conversions*/
 function fromMiligramToOthers(mg){
+  mg = parseFloat(mg);
   pounds_element.value = mg*0.0000022046;     //to pounds
   gram_element.value = mg*0.001;          //to grams
   kilogram_element.value = mg*0.000001;       //to kg
@@ -90,6 +94,7 @@ function fromMiligramToOthers(mg){
 }
 
 function fromMetricTonToOthers(mt){
+  mt = parseFloat(mt);
   pounds_element.value = mt*2204.6244202;     //to pounds
   gram_element.value = mt*1000000;          //to grams
   kilogram_element.value = mt*1000;       //to kg

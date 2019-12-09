@@ -5,6 +5,9 @@ body{
 .container{
     padding-top: 15%;
 }
+h1 a:hover{
+  text-decoration: none;
+}
 .dropdown-container{
     padding: 10px;
 }
@@ -18,12 +21,16 @@ body{
     padding: 20px;
     font-size: 30px;
     width: 50px;
+    height : 50px;
+    border-radius: 50%;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin: 5px ;
   }
+
   .fa:hover {
-    opacity: 0.7;
+    background-color: yellow;
+    transform: scale(1.8);
 }
 .fa-facebook {
     background: #3B5998;

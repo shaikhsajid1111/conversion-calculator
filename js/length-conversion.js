@@ -1,17 +1,18 @@
-meter_element = document.getElementById("meter");
-km_element = document.getElementById("kilometer");
-cm_element = document.getElementById("centimeter");
-milimeter_element = document.getElementById("milimeter");
-micrometer_element = document.getElementById("micrometer");
-nm_element = document.getElementById("nanometer");
-mile_element = document.getElementById("miles");
-yard_element = document.getElementById("yard");
-foot_element = document.getElementById("foot");
-inch_element = document.getElementById("inch");
-LY_element  = document.getElementById("light-year");
+var meter_element = document.getElementById("meter");
+var km_element = document.getElementById("kilometer");
+var cm_element = document.getElementById("centimeter");
+var milimeter_element = document.getElementById("milimeter");
+var micrometer_element = document.getElementById("micrometer");
+var nm_element = document.getElementById("nanometer");
+var mile_element = document.getElementById("miles");
+var yard_element = document.getElementById("yard");
+var foot_element = document.getElementById("foot");
+var inch_element = document.getElementById("inch");
+var LY_element  = document.getElementById("light-year");
 
 
 function fromMeterToOther(meter){
+    meter = parseFloat(meter);
     km_element.value = meter*0.001;
     cm_element.value = meter*100;
     milimeter_element.value = meter*1000;
@@ -26,6 +27,7 @@ function fromMeterToOther(meter){
 }
 
 function fromKilometerToOthers(km){
+        km = parseFloat(km);
         meter_element.value = km*1000;
         cm_element.value = km*100000;
         milimeter_element.value = km*1000000;
@@ -39,6 +41,7 @@ function fromKilometerToOthers(km){
 }
 
 function fromCentimeterToOther(cm){
+    cm = parseFloat(cm);
     meter_element.value = cm*0.01;
     km_element.value = cm*0.00001;
     milimeter_element.value = cm*10;
@@ -51,6 +54,7 @@ function fromCentimeterToOther(cm){
     LY_element.value = cm*1.057008707E-18;
 }
 function fromMilimeterToOther(mm){
+    mm = parseFloat(mm);
     meter_element.value = mm*0.001;
     km_element.value = mm*0.000001;
     cm_element.value = mm*0.1;
@@ -63,6 +67,7 @@ function fromMilimeterToOther(mm){
     LY_element.value = mm*1.057008707E-19;
 }
 function fromMicrometerToOthers(mm){
+    mm = parseFloat(mm);
     meter_element.value = mm*0.000001;
     km_element.value = mm*9.999999999E-10;
     cm_element.value = mm*0.0001;
@@ -75,6 +80,7 @@ function fromMicrometerToOthers(mm){
     LY_element.value = mm*1.057008707E-22;
 }
 function fromNanometerToOthers(nm){
+    nm = parseFloat(nm);
     meter_element.value = nm*1.E-9;
     km_element.value = nm*1.E-12;
     cm_element.value = nm*1.E-7;
@@ -87,6 +93,7 @@ function fromNanometerToOthers(nm){
     LY_element.value = nm*1.057008707E-25;
 }
 function fromMilesToOthers(mile){
+    mile = parseFloat(mile);
     meter_element.value = mile*1609.35;
     km_element.value = mile *1.60935;
     cm_element.value = mile*160935;
@@ -99,6 +106,7 @@ function fromMilesToOthers(mile){
     LY_element.value = mile*1.701096963E-13;
 }
 function fromYardToOthers(yard){
+    yard = parseFloat(yard);
     meter_element.value = yard*0.9144;
     km_element.value = yard * 0.0009144;
     cm_element.value = yard* 91.44;
@@ -111,6 +119,7 @@ function fromYardToOthers(yard){
     LY_element.value = yard*9.665287622E-17;
 }
 function fromFootToOthers(foot){
+    foot = parseFloat(foot);
     meter_element.value = foot* 0.3048;
     km_element.value = foot * 0.0003048;
     cm_element.value = foot* 30.48;
@@ -123,6 +132,7 @@ function fromFootToOthers(foot){
     LY_element.value = foot*3.22176254E-17;
 }
 function fromInchToOthers(inch){
+    inch = parseFloat(inch);
     meter_element.value = inch*0.0254 ;
     km_element.value = inch * 0.0000254;
     cm_element.value = inch* 2.54;
@@ -135,6 +145,7 @@ function fromInchToOthers(inch){
     LY_element.value = inch*2.684802117E-18;
 }
 function fromLYToOthers(ly){
+    ly = parseFloat(ly);
     meter_element.value = ly* 9460660000000000;
     km_element.value = ly * 9460660000000;
     cm_element.value = ly* 946066000000000000;
