@@ -5,6 +5,7 @@ Currently it can covert
 2)Weight
 3)Length
 4)Temperature
+5)Speed
 
 Let me know, if I can add some more conversion units :)
 
