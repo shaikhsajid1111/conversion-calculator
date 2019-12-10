@@ -153,3 +153,5 @@ function fromAcreToOthers(num){
     square_foot_element.value = num * 43560;
     square_inch_element.value = num * 6272640;
 }
+/*Author: Shaikh Sajid
+*/
