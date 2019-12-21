@@ -6,7 +6,7 @@ Currently it can covert
 3)Length
 4)Temperature
 5)Speed
-
+6)Number System Conversion
 Let me know, if I can add some more conversion units :)
 
 Here are some screenshots
