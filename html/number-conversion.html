@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Unit Converter - Speed</title>
+<title>Unit Converter - Number</title>
 <head>
   <link rel="icon" href="../image/calculator_icon.png">
   <link rel="stylesheet" href="../style/index.css">
@@ -12,7 +12,7 @@
 
 </head>
 <body>
-  <h1 class="text-center text-white bg-dark p-3 text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h1 class="text-center text-white bg-dark p-3 text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
     <h2 class="text-center">Metric System</h2>
     <p class="about-para">
         The metric system is an internationally recognised 
@@ -46,11 +46,11 @@
           </a>
         
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="length.html">Length</a>
-            <a class="dropdown-item" href="temperature.html">Temperature</a>
             <a class="dropdown-item" href="../index.html">Weight</a>
+            <a class="dropdown-item" href="temperature.html">Temperature</a>
+            <a class="dropdown-item" href="speed.html">Speed</a>
             <a class="dropdown-item" href="area.html">Area</a>
-            <a class="dropdown-item" href="number-conversion.html">Number</a>
+            <a class="dropdown-item" href="length.html">Length</a>
           </div>
         </div>
         </div>
@@ -60,36 +60,33 @@
 
 <div class="row">
   <div class="col">
-  <label>MPH</label><br>
-  <input id="mph" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="MPH"
-  onchange="fromMphToOther(this.value)" oninput="fromMphToOther(this.value)"></div>
+  <label>Binary</label><br>
+  <input id="binary" class="form-control text-center mb-2  mr-sm-2" type="text" placeholder="Binary"
+  onchange="fromBinaryToOther(this.value)" oninput="fromBinaryToOther(this.value)"></div>
         <div class="col ">
-<label>KPH</label><br>
-<input id= "kph" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="KPH"
-onchange="fromKphToOthers(this.value)" oninput = "fromKphToOthers(this.value)"><br>
+<label>Octal</label><br>
+<input id= "octal" class="form-control text-center  mb-2 mr-sm-2" type="text" placeholder="Octal"
+onchange="fromOctalToOthers(this.value)" oninput = "fromOctalToOthers(this.value)"><br>
 </div>
 </div>
 
 
 <div class="row">
   <div class="col">
-  <label>Knots</label><br>
-<input id= "knots" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Knots"
-onchange="fromKnotsToOther(this.value)" oninput = "fromKnotsToOther(this.value)">
+  <label>Decimal</label><br>
+<input id= "decimal" class="form-control text-center  mb-2 mr-sm-2" type="text" placeholder="Decimal"
+onchange="fromDecimalToOther(this.value)" oninput = "fromDecimalToOther(this.value)">
 </div>
 <div class="col">
-<label>Mach</label><br>
-<input id= "mach" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Mach"
-onchange="fromMachToOther(this.value)" oninput = "fromMachToOther(this.value)">
+<label>Hexadecimal</label><br>
+<input id= "hexadecimal" class="form-control text-center  mb-2 mr-sm-2" type="text" placeholder="Hexadecimal"
+onchange="fromHexadecimalToOther(this.value)" oninput = "fromHexadecimalToOther(this.value)">
 </div>
 </div>
 
 
 </div>
-
-
-</div>
-<script src = "../js/speed-conversion.js"></script>
+<script src = "../js/number-conversion.js"></script>
 
 </div>
 </div>
