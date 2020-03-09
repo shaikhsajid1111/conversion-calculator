@@ -1,6 +1,6 @@
-fahreinheitElement = document.getElementById("fahrenheit");
-celsiusElement = document.getElementById("celsius");
-kelvinElement = document.getElementById("kelvin");
+var fahreinheitElement = document.getElementById("fahrenheit");
+var celsiusElement = document.getElementById("celsius");
+var kelvinElement = document.getElementById("kelvin");
 
 
 function fromFahrenheitToOther(f){

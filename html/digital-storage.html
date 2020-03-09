@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<title>Unit Converter - Speed</title>
+<title>Unit Converter - Weight</title>
 <head>
-  <link rel="icon" href="../image/calculator_icon.png">
+  <link rel="icon" href="image/calculator_icon.png">
   <link rel="stylesheet" href="../style/index.css">
   <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -12,7 +12,7 @@
 
 </head>
 <body>
-  <h1 class="text-center text-white bg-dark p-3 text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h1 class="text-center text-white bg-dark p-3 text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
     <h2 class="text-center">Metric System</h2>
     <p class="about-para">
         The metric system is an internationally recognised 
@@ -48,49 +48,106 @@
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="length.html">Length</a>
             <a class="dropdown-item" href="temperature.html">Temperature</a>
-            <a class="dropdown-item" href="../index.html">Weight</a>
+            <a class="dropdown-item" href="speed.html">Speed</a>
             <a class="dropdown-item" href="area.html">Area</a>
             <a class="dropdown-item" href="number-conversion.html">Number</a>
-            <a class="dropdown-item" href="digital-storage.html">Digital Storage</a>
+            <a class="dropdown-item" href="../index.html">Weight</a>
           </div>
         </div>
         </div>
       
         <div class="text-center">
 
+            <!--
+1 byte = 8 bits
+1 kilobyte (K / Kb) = 2^10 bytes = 1,024 bytes
+1 megabyte (M / MB) = 2^20 bytes = 1,048,576 bytes
+1 gigabyte (G / GB) = 2^30 bytes = 1,073,741,824 bytes
+1 terabyte (T / TB) = 2^40 bytes = 1,099,511,627,776 bytes
+1 petabyte (P / PB) = 2^50 bytes = 1,125,899,906,842,624 bytes
+1 exabyte (E / EB) = 2^60 bytes = 1,152,921,504,606,846,976 bytes-->
+
+
+
+<div class="row">
+    
+    <div class="col">
+    <label>Bit</label><br>
+  <input id= "bit" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Bit"
+  onchange="FromBitToOther(this.value)" oninput = "FromBitToOther(this.value)">
+  </div>
+    
+    
+    <div class="col">
+    <label>Byte</label><br>
+  <input id= "byte" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Byte"
+  onchange="FromByteToOther(this.value)" oninput = "FromByteToOther(this.value)">
+  </div>
+</div>
+
+
 
 <div class="row">
   <div class="col">
-  <label>MPH</label><br>
-  <input id="mph" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="MPH"
-  onchange="fromMphToOther(this.value)" oninput="fromMphToOther(this.value)"></div>
+  <label>Kilobyte</label><br>
+  <input id="kb" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Kilobyte"
+  onchange="fromKbToOther(this.value)" oninput="fromKbToOther(this.value)"></div>
         <div class="col ">
-<label>KPH</label><br>
-<input id= "kph" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="KPH"
-onchange="fromKphToOthers(this.value)" oninput = "fromKphToOthers(this.value)"><br>
+<label>Megabyte</label><br>
+<input id= "mb" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Megabyte"
+onchange="fromMbToOthers(this.value)" oninput = "fromMbToOthers(this.value)">
 </div>
 </div>
+
 
 
 <div class="row">
   <div class="col">
-  <label>Knots</label><br>
-<input id= "knots" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Knots"
-onchange="fromKnotsToOther(this.value)" oninput = "fromKnotsToOther(this.value)">
+  <label>Gigabyte</label><br>
+<input id= "gb" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Gigabyte"
+onchange="fromGbToOther(this.value)" oninput = "fromGbToOther(this.value)">
 </div>
 <div class="col">
-<label>Mach</label><br>
-<input id= "mach" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Mach"
-onchange="fromMachToOther(this.value)" oninput = "fromMachToOther(this.value)">
+<label>Terabyte</label><br>
+<input id= "tb" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Terabyte"
+onchange="fromTbToOther(this.value)" oninput = "fromTbToOther(this.value)">
+</div>
+</div>
+
+<div class="row">
+
+  <div class="col">
+<label>Petabyte</label><br>
+<input id= "pb" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Petabyte"
+onchange="fromPbToOthers(this.value)" oninput = "fromPbToOthers(this.value)">
+</div>
+<div class="col">
+<label>Exabyte</label><br>
+<input id= "eb" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Exabyte"
+onchange="fromEbToOthers(this.value)" oninput = "fromEbToOthers(this.value)">
 </div>
 </div>
 
 
+<div class="row">
+
+  <div class="col">
+<label>Zettabyte</label><br>
+<input id= "zb" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Zetabyte"
+onchange="fromZbToOthers(this.value)" oninput = "fromZbToOthers(this.value)">
+</div>
+<div class="col">
+<label>Yottabyte</label><br>
+<input id= "yb" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Yottabyte"
+onchange="fromYbToOthers(this.value)" oninput = "fromYbToOthers(this.value)">
+</div>
 </div>
 
 
+
+
 </div>
-<script src = "../js/speed-conversion.js"></script>
+<script src = "../js/digital-storage.js"></script>
 
 </div>
 </div>
@@ -114,5 +171,6 @@ onchange="fromMachToOther(this.value)" oninput = "fromMachToOther(this.value)">
       <a href="https://www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
       <a href="https://www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
   </div>
-</footer>
+
+  <!--Author Shaikh Sajid--></footer>
 </html>

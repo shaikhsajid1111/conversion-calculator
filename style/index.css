@@ -28,13 +28,9 @@ h1 a:hover{
     margin: 5px ;
   }
 
-  .fa:hover {
+  footer .fa:hover {
     background-color: yellow;
     transform: scale(1.8);
-<<<<<<< HEAD
-    text-decoration: none;
-=======
->>>>>>> c89c8b21eb296705e89f4f28dd639853aa605212
 }
 .fa-facebook {
     background: #3B5998;
