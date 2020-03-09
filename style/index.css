@@ -27,8 +27,10 @@ h1 a:hover{
     text-decoration: none;
     margin: 5px ;
   }
-
-  footer .fa:hover {
+footer {
+  padding: 1%;
+}
+footer .fa:hover {
     background-color: yellow;
     transform: scale(1.8);
 }
