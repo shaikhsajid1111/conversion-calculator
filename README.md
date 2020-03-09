@@ -23,6 +23,12 @@ Here are some screenshots
 ![](screenshot/weight.PNG)
 
 
+![](screenshot/storage.png)
+
+
+![](screenshot/screen-capture.gif)
+
+
 ### Built with
 * [Bootstrap](https://getbootstrap.com/) - For Reponsive UI
 * [Font Awesome](https://fontawesome.com/) - For icons
