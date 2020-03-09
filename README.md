@@ -13,17 +13,23 @@
 **Let me know, if I can add some more conversion units** :slightly_smiling_face:
  
 Here are some screenshots
+- Area Screenshot
 
 ![](screenshot/area.PNG)
 
-
+- Length Screenshot
 
 ![](screenshot/length.PNG)
 
+- Weight screenshot 
+
 ![](screenshot/weight.PNG)
 
+- storage screenshot
 
 ![](screenshot/storage.png)
+
+**How to use:**
 
 
 ![](screenshot/screen-capture.gif)

@@ -2,7 +2,7 @@
 :root{
   --footer_font : 'Lato', sans-serif;
   --body_font :  'Source Sans Pro', sans-serif;
-  --input_font :  'Spartan', sans-serif;
+  --header-font :  'Spartan', sans-serif;
 }
 body{
     margin: 0;
@@ -64,7 +64,15 @@ input{
   padding: 5px;
  
 }
+.header-text{
+  font-family: var(--header-font) !important;
 
+}
+@media only screen and (max-width: 768px){      /*if screen size is bigger than screen < 768px*/
+  .header-text{
+    font-size: 1em;
+  }
+}
 /*
 font-family: 'Lato', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
