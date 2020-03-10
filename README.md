@@ -13,12 +13,16 @@
     * weight
 * Chemistry
 
-* Mathematics
-
+* Geometry
+    * Circle
+    * Square
 * Finance
 
 * Time
-**Let me know, if I can add some more conversion units** :slightly_smiling_face:
+
+
+
+*Let me know, if I can add some more conversion units* :slightly_smiling_face:
  
 Here are some screenshots
 - Area Screenshot
@@ -35,7 +39,7 @@ Here are some screenshots
 
 - storage screenshot
 
-![](screenshot/storage.png)
+![](screenshot/storage.PNG)
 
 **How to use:**
 

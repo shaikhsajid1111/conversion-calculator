@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Unit Converter - Weight</title>
+<title>Unit Converter - Square</title>
 <head>
-  <link rel="icon" href="image/calculator_icon.png">
-  <link rel="stylesheet" href="style/index.css">
+  <link rel="icon" href="../../image/calculator_icon.png">
+  <link rel="stylesheet" href="../../style/index.css">
   <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -29,10 +29,11 @@
 <!--Meta tags above-->
 
 
+
 </head>
 <body>
-    <h2 class="text-center text-white bg-dark text-uppercase header-text"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h2>
-    <h3 class="text-center">Metric System</h3>
+    <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h2 class="text-center">Metric System</h2>
     <p class="about-para">
         The metric system is an internationally recognised 
         decimalised system of measurement. It is in widespread use, 
@@ -57,9 +58,7 @@
     </p>
   <div class="container jumbotron">
   <div class="container-fluid">
-      
-      
-    <!--menu digital-->
+    
     <div class="row">
       <div class="dropdown-container text-center">
       <div class="dropdown">
@@ -69,8 +68,12 @@
         
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             
-            <a class="dropdown-item" href="html/digital/number-conversion.html">Number</a>
-            <a class="dropdown-item" href="html/digital/digital-storage.html">Digital Storage</a>
+            
+            
+            
+            <a class="dropdown-item" href="../digital/number-conversion.html">Number</a>
+            <a class="dropdown-item" href="../digital/digital-storage.html">Digital Storage</a>
+            
           </div>
         </div>
         </div>
@@ -84,10 +87,12 @@
               </a>
             
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="html/physics/length.html">Length</a>
-                <a class="dropdown-item" href="html/physics/temperature.html">Temperature</a>
-                <a class="dropdown-item" href="html/physics/speed.html">Speed</a>
-                <a class="dropdown-item" href="html/physics/area.html">Area</a>
+                <a class="dropdown-item" href="../physics/length.html">Length</a>
+                <a class="dropdown-item" href="../physics/temperature.html">Temperature</a>
+                <a class="dropdown-item" href="../physics/speed.html">Speed</a>
+                <a class="dropdown-item" href="../../index.html">Weight</a>
+                <a class="dropdown-item" href="../physics/area.html">Area</a>
+
               </div>
             </div>
             </div>
@@ -111,13 +116,12 @@
                     <div class="dropdown-container text-center">
                       <div class="dropdown">
                           <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Geometry
+                            Geometry 
                           </a>
                         
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <!--Maths item-->
-                            <a class="dropdown-item" href="html/circle.html">Circle</a>
-                            <a class="dropdown-item" href="html/geometry/square.html">Square</a>
+                            <a class="dropdown-item" href="circle.html">Circle</a>
                           </div>
                         </div>
                         </div>
@@ -142,76 +146,48 @@
                                   </a>
                                 
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <!--geometry calculation-->
-                                  
+                                  <!--time calculation-->  
                                   </div>
                                 </div>
                                 </div>
 
           </div>
 
-      
         <div class="text-center">
 
 
 <div class="row">
   <div class="col">
-  <label>Pounds</label><br>
-  <input id="pounds" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Pounds"
-  onchange="fromPoundsToOther(this.value)" oninput="fromPoundsToOther(this.value)"></div>
+  <label>Area <sup>2</sup></label><br>
+  <input id="area" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Area"
+  onchange="fromAreaToOther(this.value)" oninput="fromAreaToOther(this.value)"></div>
         <div class="col ">
-<label>Gram</label><br>
-<input id= "grams" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Grams"
-onchange="fromGramToOthers(this.value)" oninput = "fromGramToOthers(this.value)"><br>
+<label>Perimeter</label><br>
+<input id= "perimeter" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Perimeter"
+onchange="fromPerimeterToOther(this.value)" oninput = "fromPerimeterToOther(this.value)"><br>
 </div>
 </div>
 
 
 <div class="row">
-  <div class="col">
-  <label>kilogram</label><br>
-<input id= "kilogram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Kilogram"
-onchange="fromKilogramToOther(this.value)" oninput = "fromKilogramToOther(this.value)">
-</div>
-<div class="col">
-<label>Ounces</label><br>
-<input id= "ounce" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Ounce"
-onchange="fromOuncesToOther(this.value)" oninput = "fromOuncesToOther(this.value)">
-</div>
-</div>
-
-<div class="row">
 
   <div class="col">
-<label>Stone</label><br>
-<input id= "stone" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Stone"
-onchange="fromStoneToOthers(this.value)" oninput = "fromStoneToOthers(this.value)">
-</div>
-<div class="col">
-<label>Carat</label><br>
-<input id= "carat" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Carat"
-onchange="fromCaratToOthers(this.value)" oninput = "fromCaratToOthers(this.value)">
-</div>
-</div>
-
-<div class="row">
-  <div class="col">
-<label>Miligrams</label><br>
-<input id= "miligram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Miligrams"
-onchange="fromMiligramToOthers(this.value)" oninput = "fromMiligramToOthers(this.value)">
+  <label>Diagonal</label><br>
+<input id= "diagonal" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Diagonal"
+onchange="fromDiagonalToOther(this.value)" oninput = "fromDiagonalToOther(this.value)">
 </div>
 
 <div class="col">
-    <label>Metric ton</label><br>
-    <input id= "metric-ton" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Metric Ton"
-    onchange="fromMetricTonToOthers(this.value)" oninput = "fromMetricTonToOthers(this.value)">
-    </div>
+    <label>Side</label><br>
+  <input id= "side" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Side"
+  onchange="fromSideToOther(this.value)" oninput = "fromSideToOther(this.value)">
+  </div>
 
 </div>
 
 
 </div>
-<script src = "js/physics/weight-conversion.js"></script>
+<script src = "../../js/geometry/square.js"></script>
 
 </div>
 </div>
@@ -229,15 +205,15 @@ onchange="fromMiligramToOthers(this.value)" oninput = "fromMiligramToOthers(this
 
 </body>
 <footer class="bg-dark">
-  <div class="container-fluid text-center pt-1">
+  <div class="container-fluid text-center">
       <a href="https://www.facebook.com/shaikhsajid1111" class="fa fa-facebook" target="_blank"></a>
       <a href="https://www.twitter.com/shaikhsajid1111" class="fa fa-twitter" target="_blank"></a>
       <a href="https://www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
       <a href="https://www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
   </div>
-      <p class="pt-2 text-center"><a href="https://www.github.com/shaikhsajid1111" class="text-white">Sajid Shaikh &#169; 2020
-      </a></p>
-  <!--Author Shaikh Sajid-->
+  <p class="pt-2 text-center text-white"><a href="https://www.github.com/shaikhsajid1111" class="text-white">Sajid Shaikh &#169; 2020
+  </a></p>
+<!--Author Shaikh Sajid-->
 
 </footer>
 </html>
