@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Unit Converter - Area</title>
+<title>Unit Converter - Circle</title>
 <head>
-  <link rel="icon" href="../image/calculator_icon.png">
-  <link rel="stylesheet" href="../style/index.css">
+  <link rel="icon" href="../../image/calculator_icon.png">
+  <link rel="stylesheet" href="../../style/index.css">
   <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -32,7 +32,7 @@
 
 </head>
 <body>
-  <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
     <h2 class="text-center">Metric System</h2>
     <p class="about-para">
         The metric system is an internationally recognised 
@@ -59,112 +59,134 @@
   <div class="container jumbotron">
   <div class="container-fluid">
     
+    <div class="row">
       <div class="dropdown-container text-center">
       <div class="dropdown">
           <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Conversions 
+            Digital 
           </a>
         
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="length.html">Length</a>
-            <a class="dropdown-item" href="temperature.html">Temperature</a>
-            <a class="dropdown-item" href="speed.html">Speed</a>
-            <a class="dropdown-item" href="../index.html">Weight</a>
-            <a class="dropdown-item" href="number-conversion.html">Number</a>
-            <a class="dropdown-item" href="digital-storage.html">Digital Storage</a>
+            
+            
+            
+            
+            <a class="dropdown-item" href="../digital/number-conversion.html">Number</a>
+            <a class="dropdown-item" href="../digital/digital-storage.html">Digital Storage</a>
+            
           </div>
         </div>
         </div>
       
+
+<!--menu-physics-->
+        <div class="dropdown-container text-center">
+          <div class="dropdown">
+              <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Physics 
+              </a>
+            
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="../physics/length.html">Length</a>
+                <a class="dropdown-item" href="../physics/temperature.html">Temperature</a>
+                <a class="dropdown-item" href="../physics/speed.html">Speed</a>
+                <a class="dropdown-item" href="../../index.html">Weight</a>
+                <a class="dropdown-item" href="../physics/area.html">Area</a>
+
+              </div>
+            </div>
+            </div>
+
+            <div class="dropdown-container text-center">
+              <div class="dropdown">
+                  <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Chemistry 
+                  </a>
+                
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <!--add menu item later for chemistry-->
+                  </div>
+                </div>
+                </div>
+
+
+               
+
+
+                    <div class="dropdown-container text-center">
+                      <div class="dropdown">
+                          <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Mathematics 
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <!--Maths item-->
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="dropdown-container text-center">
+                          <div class="dropdown">
+                              <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Finance 
+                              </a>
+                            
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <!--finance item-->
+                              </div>
+                            </div>
+                            </div>
+
+
+                            <div class="dropdown-container text-center">
+                              <div class="dropdown">
+                                  <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Time 
+                                  </a>
+                                
+                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                  <!--time calculation-->  
+                                  </div>
+                                </div>
+                                </div>
+
+          </div>
+
         <div class="text-center">
 
 
 <div class="row">
   <div class="col">
-  <label>Square Meter</label><br>
-  <input id="square-meter" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Square Meter"
-  onchange="fromSquareMeterToOther(this.value)" oninput="fromSquareMeterToOther(this.value)"></div>
+  <label>Diameter</label><br>
+  <input id="di" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Diameter"
+  onchange="fromDiameterToOther(this.value)" oninput="fromDiameterToOther(this.value)"></div>
         <div class="col ">
-<label>Square kilometer</label><br>
-<input id= "square-kilometer" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Kilometer"
-onchange="fromSquareKilometerToOthers(this.value)" oninput = "fromSquareKilometerToOthers(this.value)"><br>
+<label>Circumference</label><br>
+<input id= "cr" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Circumference"
+onchange="fromCircumferenceToOther(this.value)" oninput = "fromCircumferenceToOther(this.value)"><br>
 </div>
 </div>
 
 
 <div class="row">
-  <div class="col">
-  <label>Square Centimeter</label><br>
-<input id= "square-centimeter" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Centimeter"
-onchange="fromSquareCentimeterToOther(this.value)" oninput = "fromSquareCentimeterToOther(this.value)">
-</div>
-<div class="col">
-<label>Square Milimeter </label><br>
-<input id= "square-milimeter" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Milimeter"
-onchange="fromSquareMilimeterToOther(this.value)" oninput = "fromSquareMilimeterToOther(this.value)">
-</div>
-</div>
-
-<div class="row">
 
   <div class="col">
-<label>Square Micrometer</label><br>
-<input id= "square-micrometer" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Micrometer"
-onchange="fromSquareMicrometerToOthers(this.value)" oninput = "fromSquareMicrometerToOthers(this.value)">
-</div>
-<div class="col">
-<label>Hectare</label><br>
-<input id= "hectare" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Hectare"
-onchange="fromHectarToOthers(this.value)" oninput = "fromHectarToOthers(this.value)">
-</div>
-</div>
-
-<div class="row">
-  <div class="col">
-<label>Square Mile</label><br>
-<input id= "square-mile" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Mile"
-onchange="fromSquareMileToOthers(this.value)" oninput = "fromSquareMileToOthers(this.value)">
+  <label>Area</label><br>
+<input id= "area" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Area"
+onchange="fromAreaToOther(this.value)" oninput = "fromAreaToOther(this.value)">
 </div>
 
 <div class="col">
-    <label>Square Yard</label><br>
-    <input id= "square-yard" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Yard"
-    onchange="fromSquareYardToOthers(this.value)" oninput = "fromSquareYardToOthers(this.value)">
-    </div>
-
-</div>
-
-
-<div class="row">
-  <div class="col">
-<label>Square Foot</label><br>
-<input id= "square-foot" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Foot"
-onchange="fromSquareFootToOthers(this.value)" oninput = "fromSquareFootToOthers(this.value)">
-</div>
-
-<div class="col">
-    <label>Square Inch</label><br>
-    <input id= "square-inch" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Inch"
-    onchange="fromSquareInchToOthers(this.value)" oninput = "fromSquareInchToOthers(this.value)">
-    </div>
-
-
-</div>
-
-
-<div class="row">
-  <div class="col">
-<label>Acre</label><br>
-<input id= "acre" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Acre"
-onchange="fromAcreToOthers(this.value)" oninput = "fromAcreToOthers(this.value)">
-</div>
-
+    <label>Radius</label><br>
+  <input id= "r" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Radius"
+  onchange="fromRadiusToOther(this.value)" oninput = "fromRadiusToOther(this.value)">
+  </div>
 
 </div>
 
 
 </div>
-<script src = "../js/area-conversion.js"></script>
+<script src = "../../js/geometry/circle.js"></script>
 
 </div>
 </div>

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>Unit Converter - Weight</title>
+<title>Unit Converter - Area</title>
 <head>
-  <link rel="icon" href="image/calculator_icon.png">
-  <link rel="stylesheet" href="style/index.css">
+  <link rel="icon" href="../../image/calculator_icon.png">
+  <link rel="stylesheet" href="../../style/index.css">
   <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -29,10 +29,11 @@
 <!--Meta tags above-->
 
 
+
 </head>
 <body>
-    <h2 class="text-center text-white bg-dark text-uppercase header-text"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h2>
-    <h3 class="text-center">Metric System</h3>
+  <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h2 class="text-center">Metric System</h2>
     <p class="about-para">
         The metric system is an internationally recognised 
         decimalised system of measurement. It is in widespread use, 
@@ -55,10 +56,10 @@
     <p class="about-para">
       <h3 class="text-center">Enter value in any input field to determine values in other units</h3>
     </p>
+
   <div class="container jumbotron">
   <div class="container-fluid">
-      
-      
+    
     <!--menu digital-->
     <div class="row">
       <div class="dropdown-container text-center">
@@ -69,8 +70,11 @@
         
           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             
-            <a class="dropdown-item" href="html/number-conversion.html">Number</a>
-            <a class="dropdown-item" href="html/digital-storage.html">Digital Storage</a>
+            
+            
+            
+            <a class="dropdown-item" href="number-conversion.html">Number</a>
+            <a class="dropdown-item" href="digital-storage.html">Digital Storage</a>
           </div>
         </div>
         </div>
@@ -84,10 +88,10 @@
               </a>
             
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="html/physics/length.html">Length</a>
-                <a class="dropdown-item" href="html/physics/temperature.html">Temperature</a>
-                <a class="dropdown-item" href="html/physics/speed.html">Speed</a>
-                <a class="dropdown-item" href="html/physics/area.html">Area</a>
+                <a class="dropdown-item" href="length.html">Length</a>
+                <a class="dropdown-item" href="temperature.html">Temperature</a>
+                <a class="dropdown-item" href="speed.html">Speed</a>
+                <a class="dropdown-item" href="../../index.html">Weight</a>
               </div>
             </div>
             </div>
@@ -111,11 +115,12 @@
                     <div class="dropdown-container text-center">
                       <div class="dropdown">
                           <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Mathematics 
+                            Geometry
                           </a>
                         
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <!--Maths item-->
+                            <a class="dropdown-item" href="../geometry/circle.html">Circle</a>
                           </div>
                         </div>
                         </div>
@@ -140,8 +145,7 @@
                                   </a>
                                 
                                   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                  <!--geometry calculation-->
-                                  <a class="dropdown-item" href="html/circle.html">Circle</a>
+                                  <!--time calculation-->  
                                   </div>
                                 </div>
                                 </div>
@@ -154,62 +158,90 @@
 
 <div class="row">
   <div class="col">
-  <label>Pounds</label><br>
-  <input id="pounds" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Pounds"
-  onchange="fromPoundsToOther(this.value)" oninput="fromPoundsToOther(this.value)"></div>
+  <label>Square Meter</label><br>
+  <input id="square-meter" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Square Meter"
+  onchange="fromSquareMeterToOther(this.value)" oninput="fromSquareMeterToOther(this.value)"></div>
         <div class="col ">
-<label>Gram</label><br>
-<input id= "grams" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Grams"
-onchange="fromGramToOthers(this.value)" oninput = "fromGramToOthers(this.value)"><br>
+<label>Square kilometer</label><br>
+<input id= "square-kilometer" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Kilometer"
+onchange="fromSquareKilometerToOthers(this.value)" oninput = "fromSquareKilometerToOthers(this.value)"><br>
 </div>
 </div>
 
 
 <div class="row">
   <div class="col">
-  <label>kilogram</label><br>
-<input id= "kilogram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Kilogram"
-onchange="fromKilogramToOther(this.value)" oninput = "fromKilogramToOther(this.value)">
+  <label>Square Centimeter</label><br>
+<input id= "square-centimeter" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Centimeter"
+onchange="fromSquareCentimeterToOther(this.value)" oninput = "fromSquareCentimeterToOther(this.value)">
 </div>
 <div class="col">
-<label>Ounces</label><br>
-<input id= "ounce" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Ounce"
-onchange="fromOuncesToOther(this.value)" oninput = "fromOuncesToOther(this.value)">
+<label>Square Milimeter </label><br>
+<input id= "square-milimeter" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Milimeter"
+onchange="fromSquareMilimeterToOther(this.value)" oninput = "fromSquareMilimeterToOther(this.value)">
 </div>
 </div>
 
 <div class="row">
 
   <div class="col">
-<label>Stone</label><br>
-<input id= "stone" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Stone"
-onchange="fromStoneToOthers(this.value)" oninput = "fromStoneToOthers(this.value)">
+<label>Square Micrometer</label><br>
+<input id= "square-micrometer" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Micrometer"
+onchange="fromSquareMicrometerToOthers(this.value)" oninput = "fromSquareMicrometerToOthers(this.value)">
 </div>
 <div class="col">
-<label>Carat</label><br>
-<input id= "carat" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Carat"
-onchange="fromCaratToOthers(this.value)" oninput = "fromCaratToOthers(this.value)">
+<label>Hectare</label><br>
+<input id= "hectare" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Hectare"
+onchange="fromHectarToOthers(this.value)" oninput = "fromHectarToOthers(this.value)">
 </div>
 </div>
 
 <div class="row">
   <div class="col">
-<label>Miligrams</label><br>
-<input id= "miligram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Miligrams"
-onchange="fromMiligramToOthers(this.value)" oninput = "fromMiligramToOthers(this.value)">
+<label>Square Mile</label><br>
+<input id= "square-mile" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Mile"
+onchange="fromSquareMileToOthers(this.value)" oninput = "fromSquareMileToOthers(this.value)">
 </div>
 
 <div class="col">
-    <label>Metric ton</label><br>
-    <input id= "metric-ton" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Metric Ton"
-    onchange="fromMetricTonToOthers(this.value)" oninput = "fromMetricTonToOthers(this.value)">
+    <label>Square Yard</label><br>
+    <input id= "square-yard" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Yard"
+    onchange="fromSquareYardToOthers(this.value)" oninput = "fromSquareYardToOthers(this.value)">
     </div>
 
 </div>
 
 
+<div class="row">
+  <div class="col">
+<label>Square Foot</label><br>
+<input id= "square-foot" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Foot"
+onchange="fromSquareFootToOthers(this.value)" oninput = "fromSquareFootToOthers(this.value)">
 </div>
-<script src = "js/physics/weight-conversion.js"></script>
+
+<div class="col">
+    <label>Square Inch</label><br>
+    <input id= "square-inch" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Square Inch"
+    onchange="fromSquareInchToOthers(this.value)" oninput = "fromSquareInchToOthers(this.value)">
+    </div>
+
+
+</div>
+
+
+<div class="row">
+  <div class="col">
+<label>Acre</label><br>
+<input id= "acre" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Acre"
+onchange="fromAcreToOthers(this.value)" oninput = "fromAcreToOthers(this.value)">
+</div>
+
+
+</div>
+
+
+</div>
+<script src = "../../js/physics/area-conversion.js"></script>
 
 </div>
 </div>
@@ -227,15 +259,15 @@ onchange="fromMiligramToOthers(this.value)" oninput = "fromMiligramToOthers(this
 
 </body>
 <footer class="bg-dark">
-  <div class="container-fluid text-center pt-1">
+  <div class="container-fluid text-center">
       <a href="https://www.facebook.com/shaikhsajid1111" class="fa fa-facebook" target="_blank"></a>
       <a href="https://www.twitter.com/shaikhsajid1111" class="fa fa-twitter" target="_blank"></a>
       <a href="https://www.instagram.com/shaikhsajid1111" class="fa fa-instagram" target="_blank"></a>
       <a href="https://www.github.com/shaikhsajid1111" class="fa fa-github" target="_blank"></a>
   </div>
-      <p class="pt-2 text-center"><a href="https://www.github.com/shaikhsajid1111" class="text-white">Sajid Shaikh &#169; 2020
-      </a></p>
-  <!--Author Shaikh Sajid-->
+  <p class="pt-2 text-center text-white"><a href="https://www.github.com/shaikhsajid1111" class="text-white">Sajid Shaikh &#169; 2020
+  </a></p>
+<!--Author Shaikh Sajid-->
 
 </footer>
 </html>
