@@ -16,6 +16,7 @@
 * Geometry
     * Circle
     * Square
+    * Rectangle
 * Finance
 
 * Time

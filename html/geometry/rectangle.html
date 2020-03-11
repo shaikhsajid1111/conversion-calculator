@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Unit Converter - Speed</title>
+<title>Unit Converter - Rectangle</title>
 <head>
   <link rel="icon" href="../../image/calculator_icon.png">
   <link rel="stylesheet" href="../../style/index.css">
@@ -9,7 +9,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
-
 
 <!--Meta tags-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
@@ -33,7 +32,7 @@
 
 </head>
 <body>
-  <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
+    <h1 class="text-center text-white bg-dark header-text text-uppercase"> <a href="#" class="text-light">Conversion Calculator</a> <i class="fa fa-calculator"></i></h1>
     <h2 class="text-center">Metric System</h2>
     <p class="about-para">
         The metric system is an internationally recognised 
@@ -60,8 +59,6 @@
   <div class="container jumbotron">
   <div class="container-fluid">
     
-      
-    <!--menu digital-->
     <div class="row">
       <div class="dropdown-container text-center">
       <div class="dropdown">
@@ -74,8 +71,9 @@
             
             
             
-            <a class="dropdown-item" href="number-conversion.html">Number</a>
-            <a class="dropdown-item" href="digital-storage.html">Digital Storage</a>
+            <a class="dropdown-item" href="../digital/number-conversion.html">Number</a>
+            <a class="dropdown-item" href="../digital/digital-storage.html">Digital Storage</a>
+            
           </div>
         </div>
         </div>
@@ -89,10 +87,12 @@
               </a>
             
               <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item" href="length.html">Length</a>
-                <a class="dropdown-item" href="temperature.html">Temperature</a>
-                <a class="dropdown-item" href="speed.html">Speed</a>
+                <a class="dropdown-item" href="../physics/length.html">Length</a>
+                <a class="dropdown-item" href="../physics/temperature.html">Temperature</a>
+                <a class="dropdown-item" href="../physics/speed.html">Speed</a>
                 <a class="dropdown-item" href="../../index.html">Weight</a>
+                <a class="dropdown-item" href="../physics/area.html">Area</a>
+
               </div>
             </div>
             </div>
@@ -107,10 +107,7 @@
                     <!--add menu item later for chemistry-->
                   </div>
                 </div>
-                </div>
-
-
-               
+            </div>
 
 
                     <div class="dropdown-container text-center">
@@ -121,9 +118,8 @@
                         
                           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <!--Maths item-->
-                            <a class="dropdown-item" href="../geometry/circle.html">Circle</a>
-                            <a class="dropdown-item" href="../geometry/square.html">Square</a>
-                            <a class="dropdown-item" href="../geometry/rectangle.html">Rectangle</a>
+                            <a class="dropdown-item" href="circle.html">Circle</a>
+                            <a class="dropdown-item" href="square.html">Square</a>
                           </div>
                         </div>
                         </div>
@@ -160,36 +156,48 @@
 
 <div class="row">
   <div class="col">
-  <label>MPH</label><br>
-  <input id="mph" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="MPH"
-  onchange="fromMphToOther(this.value)" oninput="fromMphToOther(this.value)"></div>
+  <label>Area <sup>2</sup></label><br>
+  <input id="area" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Area"></div>
         <div class="col ">
-<label>KPH</label><br>
-<input id= "kph" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="KPH"
-onchange="fromKphToOthers(this.value)" oninput = "fromKphToOthers(this.value)"><br>
+<label>Perimeter</label><br>
+<input id= "perimeter" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Perimeter"><br>
 </div>
 </div>
 
 
 <div class="row">
+
   <div class="col">
-  <label>Knots</label><br>
-<input id= "knots" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Knots"
-onchange="fromKnotsToOther(this.value)" oninput = "fromKnotsToOther(this.value)">
+  <label>Diagonal</label><br>
+<input id= "diagonal" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Diagonal">
 </div>
+
 <div class="col">
-<label>Mach</label><br>
-<input id= "mach" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Mach"
-onchange="fromMachToOther(this.value)" oninput = "fromMachToOther(this.value)">
-</div>
-</div>
-
+    <label>Side A</label><br>
+  <input id= "sideA" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Side A">
+  </div>
 
 </div>
+<div class="row">
 
+  
 
+<div class="col">
+    <label>Side B</label><br>
+  <input id= "sideB" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Side B">
+  </div>
+  
 </div>
-<script src = "../../js/physics/speed-conversion.js"></script>
+<button class="btn btn-primary" id="submit-button">Calculate</button>
+<button class="btn btn-danger" id="clear-button">Clear</button>
+<br>
+<kbd>A= Area<sup>2</sup></kbd>
+<kbd>b= Side B</kbd>
+<kbd>a = side A</kbd>
+<kbd>q = Diagonal</kbd>
+<kbd>P = Perimeter</kbd>
+</div>
+<script src = "../../js/geometry/rectangle.js"></script>
 
 </div>
 </div>

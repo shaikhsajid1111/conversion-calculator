@@ -27,3 +27,5 @@ function fromMachToOther(mach){
     kph_element.value = mach*1225.044;
     knot_element.value = mach*661.4708;
 }
+
+
