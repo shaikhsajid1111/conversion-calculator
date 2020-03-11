@@ -50,7 +50,7 @@ function PerimeterAndSideA(perimeter,sideA){
     A = ab
     p = q = √(a2 + b2)
     */
-   var sideB__ = (perimeter-(2*sideA)); 
+   var sideB__ = (perimeter-(2*sideA))/2; 
    sideB.value = sideB__;
    area.value = sideA*sideB__;
    diagonal.value = Math.sqrt((Math.pow(sideA,2)) + (Math.pow(sideB__,2)));
@@ -65,7 +65,7 @@ function perimeterAndsideB(perimeter,sideB){
     var sideA__ = (perimeter-(2*sideB)) / 2; 
     sideA.value = sideA__;
     area.value = sideA__*sideB;
-    var diagonal = Math.sqrt((Math.pow(sideA__,2)) + (Math.pow(sideB,2)));
+    diagonal.value = Math.sqrt((Math.pow(sideA__,2)) + (Math.pow(sideB,2)));
 
 }
 function diagonalAndSideA(diagonal,sideA){
@@ -74,7 +74,7 @@ function diagonalAndSideA(diagonal,sideA){
     A = ab
     P = 2a + 2b
      */
-    var sideB__ = Math.sqrt( (Math.pow(diagonal,2)) + (Math.pow(sideA,2)) );
+    var sideB__ = Math.sqrt( (Math.pow(diagonal,2)) - (Math.pow(sideA,2)) );
     sideB.value  = sideB__;
     area.value = sideA*sideB__;
     perimeter.value = (2*sideA) + (2*sideB__);
@@ -85,7 +85,7 @@ function diagonalAndSideB(diagonal,sideB){
     A = ab
     P = 2a + 2b
     */
-    var sideA__ = Math.sqrt((Math.pow(diagonal,2)) + (Math.pow(sideB,2)));
+    var sideA__ = Math.sqrt((Math.pow(diagonal,2)) - (Math.pow(sideB,2)));
     sideA.value = sideA__;
     area.value = sideA__*sideB;
     perimeter.value = (2*sideA__) + (2*sideB);

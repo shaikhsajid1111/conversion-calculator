@@ -32,7 +32,7 @@ function fromAreaToOther(area){
 }
 function fromRadiusToOther(r){
     r = parseFloat(r);
-    diameter.value = r/2;
+    diameter.value = r*2;
     circumference.value = 2*Math.PI*r;
     area.value = Math.PI*(r*r);
 }
