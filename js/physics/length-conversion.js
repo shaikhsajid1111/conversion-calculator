@@ -9,10 +9,22 @@ var yard_element = document.getElementById("yard");
 var foot_element = document.getElementById("foot");
 var inch_element = document.getElementById("inch");
 var LY_element  = document.getElementById("light-year");
+function is_valid(element,value){
+    if(value < 0){
+        alert("Cannot accept negative numbers!");
+        element.value = "";
+        return false;
+
+    }
+    else{
+        return true;
+    }
+}
 
 
 function fromMeterToOther(meter){
     meter = parseFloat(meter);
+    if(is_valid(meter_element,meter)){
     km_element.value = meter*0.001;
     cm_element.value = meter*100;
     milimeter_element.value = meter*1000;
@@ -23,11 +35,12 @@ function fromMeterToOther(meter){
     foot_element.value  = meter*3.280839895
     inch_element.value = meter*39.37007874;
     LY_element.value = meter*1.057008707E-16;
-
+    }
 }
 
 function fromKilometerToOthers(km){
         km = parseFloat(km);
+        if(is_valid(km_element,km)){
         meter_element.value = km*1000;
         cm_element.value = km*100000;
         milimeter_element.value = km*1000000;
@@ -39,9 +52,10 @@ function fromKilometerToOthers(km){
         inch_element.value = km*39370.07874;
         LY_element.value = km*1.057008707E-13;
 }
-
+}
 function fromCentimeterToOther(cm){
     cm = parseFloat(cm);
+    if(is_valid(cm_element,cm)){
     meter_element.value = cm*0.01;
     km_element.value = cm*0.00001;
     milimeter_element.value = cm*10;
@@ -53,8 +67,10 @@ function fromCentimeterToOther(cm){
     inch_element.value = cm*0.3937007874;
     LY_element.value = cm*1.057008707E-18;
 }
+}
 function fromMilimeterToOther(mm){
     mm = parseFloat(mm);
+    if(is_valid(milimeter_element,mm)){
     meter_element.value = mm*0.001;
     km_element.value = mm*0.000001;
     cm_element.value = mm*0.1;
@@ -66,8 +82,10 @@ function fromMilimeterToOther(mm){
     inch_element.value = mm*0.0393700787
     LY_element.value = mm*1.057008707E-19;
 }
+}
 function fromMicrometerToOthers(mm){
     mm = parseFloat(mm);
+    if(is_valid(micrometer_element,mm)){
     meter_element.value = mm*0.000001;
     km_element.value = mm*9.999999999E-10;
     cm_element.value = mm*0.0001;
@@ -79,8 +97,10 @@ function fromMicrometerToOthers(mm){
     inch_element.value = mm*0.0000393701;
     LY_element.value = mm*1.057008707E-22;
 }
+}
 function fromNanometerToOthers(nm){
     nm = parseFloat(nm);
+    if(is_valid(nm_element,nm)){
     meter_element.value = nm*1.E-9;
     km_element.value = nm*1.E-12;
     cm_element.value = nm*1.E-7;
@@ -92,8 +112,10 @@ function fromNanometerToOthers(nm){
     inch_element.value = nm*3.937007874E-8;
     LY_element.value = nm*1.057008707E-25;
 }
+}
 function fromMilesToOthers(mile){
     mile = parseFloat(mile);
+    if(is_valid(mile_element,mile)){
     meter_element.value = mile*1609.35;
     km_element.value = mile *1.60935;
     cm_element.value = mile*160935;
@@ -105,8 +127,10 @@ function fromMilesToOthers(mile){
     inch_element.value = mile*63360.23622;
     LY_element.value = mile*1.701096963E-13;
 }
+}
 function fromYardToOthers(yard){
     yard = parseFloat(yard);
+    if(is_valid(yard_element,yard)){
     meter_element.value = yard*0.9144;
     km_element.value = yard * 0.0009144;
     cm_element.value = yard* 91.44;
@@ -118,8 +142,10 @@ function fromYardToOthers(yard){
     inch_element.value = yard*36;
     LY_element.value = yard*9.665287622E-17;
 }
+}
 function fromFootToOthers(foot){
     foot = parseFloat(foot);
+    if(is_valid(foot_element,foot)){
     meter_element.value = foot* 0.3048;
     km_element.value = foot * 0.0003048;
     cm_element.value = foot* 30.48;
@@ -131,8 +157,10 @@ function fromFootToOthers(foot){
     inch_element.value = foot*12;
     LY_element.value = foot*3.22176254E-17;
 }
+}
 function fromInchToOthers(inch){
     inch = parseFloat(inch);
+    if(is_valid(inch_element,inch)){
     meter_element.value = inch*0.0254 ;
     km_element.value = inch * 0.0000254;
     cm_element.value = inch* 2.54;
@@ -144,8 +172,10 @@ function fromInchToOthers(inch){
     foot_element.value = inch* 0.0833333333;
     LY_element.value = inch*2.684802117E-18;
 }
+}
 function fromLYToOthers(ly){
     ly = parseFloat(ly);
+    if(is_valid(LY_element,ly)){
     meter_element.value = ly* 9460660000000000;
     km_element.value = ly * 9460660000000;
     cm_element.value = ly* 946066000000000000;
@@ -156,4 +186,5 @@ function fromLYToOthers(ly){
     yard_element.value = ly * 10346303587051618;
     foot_element.value = ly* 31038910761154856;
     inch_element.value = ly* 372466929133858300;
+}
 }

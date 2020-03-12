@@ -10,8 +10,21 @@ var square_foot_element = document.getElementById("square-foot");
 var square_inch_element = document.getElementById("square-inch");
 var acre_element = document.getElementById("acre");
 
+function is_valid(element,value){
+    if(value < 0){
+        alert("Cannot accept negative numbers!");
+        element.value = "";
+        return false;
+
+    }
+    else{
+        return true;
+    }
+}
+
 function fromSquareMeterToOther(num){
     num = parseFloat(num);
+    if(is_valid(square_meter_element,num)){
     square_km_element.value = num * 0.000001;
     square_cm_element.value =  num * 10000;
     square_mm_element.value = num * 1000000;
@@ -22,9 +35,11 @@ function fromSquareMeterToOther(num){
     square_foot_element.value = num * 10.763910417;
     square_inch_element.value = num * 1550.0031;
     acre_element.value = num * 0.0002471054;
+    }
 }
 function fromSquareKilometerToOthers(num){
     num = parseFloat(num);
+    if(is_valid(square_km_element,num)){
     square_meter_element.value = num * 1000000;
     square_cm_element.value =  num * 10000000000;
     square_mm_element.value = num * 1000000000000;
@@ -35,9 +50,11 @@ function fromSquareKilometerToOthers(num){
     square_foot_element.value = num * 10763910.417;
     square_inch_element.value = num * 1550003100;
     acre_element.value = num * 247.10538147;
+    }
 }
 function fromSquareCentimeterToOther(num){
     num = parseFloat(num);
+    if(is_valid(square_cm_element,num)){
     square_meter_element.value = num * 0.0001;
     square_km_element.value =  num * 1.E-10;
     square_mm_element.value = num * 100;
@@ -49,8 +66,10 @@ function fromSquareCentimeterToOther(num){
     square_inch_element.value = num * 0.15500031;
     acre_element.value = num * 2.471053814E-8;
 }
+}
 function fromSquareMilimeterToOther(num){
     num = parseFloat(num);
+    if(is_valid(square_mm_element,num)){
     square_meter_element.value = num * 0.000001;
     square_km_element.value =  num * 1.E-12;
     square_cm_element.value = num * 0.01;
@@ -62,8 +81,10 @@ function fromSquareMilimeterToOther(num){
     square_inch_element.value = num * 0.0015500031;
     acre_element.value = num * 2.471053814E-10;
 }
+}
 function fromSquareMicrometerToOthers(num){
     num = parseFloat(num);
+    if(is_valid(square_micro_element,num)){
     square_meter_element.value = num * 1.E-12;
     square_km_element.value =  num * 1.E-18;
     square_cm_element.value = num * 9.999999999E-9;
@@ -75,8 +96,10 @@ function fromSquareMicrometerToOthers(num){
     square_inch_element.value = num * 1.5500031E-9;
     acre_element.value = num * 2.471053814E-16;
 }
+}
 function fromHectarToOthers(num){
     num = parseFloat(num);
+    if(is_valid(hectare_element,num)){
     square_meter_element.value = num * 10000;
     square_km_element.value =  num * 0.01;
     square_cm_element.value = num * 100000000;
@@ -88,8 +111,10 @@ function fromHectarToOthers(num){
     square_inch_element.value = num * 15500031;
     acre_element.value = num * 2.4710538147;
 }
+}
 function fromSquareMileToOthers(num){
     num = parseFloat(num);
+    if(is_valid(square_mile_element,num)){
     square_meter_element.value = num * 2589990;
     square_km_element.value =  num * 2.58999;
     square_cm_element.value = num * 25899900000;
@@ -101,8 +126,10 @@ function fromSquareMileToOthers(num){
     square_inch_element.value = num * 4014492529;
     acre_element.value = num * 640.00046695;
 }
+}
 function fromSquareYardToOthers(num){
     num = parseFloat(num);
+    if(is_valid(square_yard_element,num)){
     square_meter_element.value = num * 0.83612736;
     square_km_element.value =  num * 8.3612736E-7;
     square_cm_element.value = num * 8361.2736;
@@ -114,8 +141,10 @@ function fromSquareYardToOthers(num){
     square_inch_element.value = num * 1296;
     acre_element.value = num * 0.0002066116;
 }
+}
 function fromSquareFootToOthers(num){
     num = parseFloat(num);
+    if(is_valid(square_foot_element,num)){
     square_meter_element.value = num * 0.09290304;
     square_km_element.value =  num * 9.290304E-8;
     square_cm_element.value = num * 929.0304;
@@ -127,8 +156,10 @@ function fromSquareFootToOthers(num){
     square_inch_element.value = num * 144;
     acre_element.value = num * 0.0000229568;
 }
+}
 function fromSquareInchToOthers(num){
     num = parseFloat(num);
+    if(is_valid(square_inch_element,num)){
     square_meter_element.value = num * 0.00064516;
     square_km_element.value =  num * 6.4516E-10;
     square_cm_element.value = num * 6.4516;
@@ -140,8 +171,10 @@ function fromSquareInchToOthers(num){
     square_foot_element.value = num * 0.0069444444;
     acre_element.value = num * 1.594225079E-7;
 }
+}
 function fromAcreToOthers(num){
     num = parseFloat(num);
+    if(is_valid(acre_element,num)){
     square_meter_element.value = num * 4046.8564224;
     square_km_element.value =  num * 0.0040468564;
     square_cm_element.value = num * 40468564.224;
@@ -152,6 +185,7 @@ function fromAcreToOthers(num){
     square_yard_element.value = num * 4840;
     square_foot_element.value = num * 43560;
     square_inch_element.value = num * 6272640;
+}
 }
 /*Author: Shaikh Sajid
 */
