@@ -50,6 +50,10 @@ function PerimeterAndSideA(perimeter,sideA){
     A = ab
     p = q = √(a2 + b2)
     */
+   if(perimeter < (2*sideA)){
+       alert("Perimeter must be > 2 x Side");
+       return;
+   }
    var sideB__ = (perimeter-(2*sideA))/2; 
    sideB.value = sideB__;
    area.value = sideA*sideB__;
@@ -62,6 +66,10 @@ function perimeterAndsideB(perimeter,sideB){
     A = ab
     p = q = √(a2 + b2)
      */
+    if(perimeter < (2*sideB)){
+        alert("Perimeter must be > 2 x side");
+        return;
+    }
     var sideA__ = (perimeter-(2*sideB)) / 2; 
     sideA.value = sideA__;
     area.value = sideA__*sideB;
@@ -74,6 +82,9 @@ function diagonalAndSideA(diagonal,sideA){
     A = ab
     P = 2a + 2b
      */
+    if(diagonal < sideA){
+        alert("Invalid Input: q < a");
+   }
     var sideB__ = Math.sqrt( (Math.pow(diagonal,2)) - (Math.pow(sideA,2)) );
     sideB.value  = sideB__;
     area.value = sideA*sideB__;
@@ -85,6 +96,9 @@ function diagonalAndSideB(diagonal,sideB){
     A = ab
     P = 2a + 2b
     */
+   if(diagonal < sideB){
+        alert("Invalid Input: q < b");
+   }
     var sideA__ = Math.sqrt((Math.pow(diagonal,2)) - (Math.pow(sideB,2)));
     sideA.value = sideA__;
     area.value = sideA__*sideB;
